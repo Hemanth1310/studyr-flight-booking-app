@@ -1,0 +1,53 @@
+.booking-complete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px
+}
+
+.responses{
+    border: 2px solid #333;
+    padding: 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin: 50px 200px;
+    align-items: center;
+}
+
+.res-listing{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    text-align: left;
+
+}
+
+.user-pref{
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    text-align: top;
+    gap:200px
+}
+
+.res-listing p{
+    width: 300px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.res-listing span{
+    width: 200px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.line-strike{
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+}
+
+

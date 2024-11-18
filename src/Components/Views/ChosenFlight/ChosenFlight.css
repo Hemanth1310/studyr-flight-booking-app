@@ -1,0 +1,70 @@
+.flight-details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:5;
+    width: 100%;
+    
+}
+
+.airline-option{
+    width: 1600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #313638 ;
+    border-radius: 70px;
+    align-items: center;
+    padding:0px 100px 0px 100px;
+    box-sizing: border-box;
+    /* margin-top: 50px; */
+}
+
+
+
+.airline-name{
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.deptime{
+    font-size: 28px;
+}
+
+.arrtime{
+    font-size: 28px;
+}
+
+.travtime{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tkt-price{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pperson{
+    font-size: 20px;
+}
+
+.linestrike-airline{
+    width: 200px;
+    height: 3px;
+    background: #313638 ;
+}
+
+.date{
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+
+
+.price{
+    font-size: 24px;
+    font-weight: 900;
+    color: #a0a0a0;
+}

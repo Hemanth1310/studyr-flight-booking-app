@@ -1,0 +1,103 @@
+.flight-details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:5;
+    width: 100%;
+}
+
+.recommendation{
+    background: #3523DA;
+    color: #fff;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 30px 30px 0px 0px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.recommendation p{
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+}
+.airline-option{
+    width: 1600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #313638 ;
+    border-radius: 70px;
+    align-items: center;
+    padding:0px 100px 0px 100px;
+    box-sizing: border-box;
+
+}
+
+.recommended{
+    border: 5px solid #3523DA !important;
+    padding:30px 100px 0px 100px !important;
+}
+
+
+
+.airline-name{
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.deptime{
+    font-size: 28px;
+}
+
+.arrtime{
+    font-size: 28px;
+}
+
+.travtime{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tkt-price{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pperson{
+    font-size: 20px;
+}
+
+.linestrike-airline{
+    width: 200px;
+    height: 3px;
+    background: #313638 ;
+}
+
+.book-btn{
+    font-size: 28px;
+    height: 100px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    background: #1F95AE;
+}
+
+.date{
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+
+
+.price{
+    font-size: 24px;
+    font-weight: 900;
+    color: #a0a0a0;
+}
+
+.book-btn{
+    text-decoration: none;
+    color: #fff;
+}

@@ -1,0 +1,94 @@
+.questions{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.question-div{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin:100px 200px;
+   
+
+}
+.question-img{
+    /* height: 300px; */
+    max-width: 300px;
+    max-height: 300px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    /* padding: 100px 100px; */
+    border-radius: 30px;
+}
+
+.option:hover{
+    border: 2px solid #1F95AE;
+    
+}
+
+.registration-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px 200px;
+    gap: 100px;
+}
+
+.offers{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+/* 
+    width: 500px;
+    height: 500px; */
+    /* border: 1px solid #ccc; */
+    /* padding: 100px 100px; */
+    border-radius: 30px;
+
+}
+
+.offers img{
+    max-width: 300px;
+    height: 200px;
+}
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.registration-option{
+    display: flex;
+    justify-items: center;
+    gap:500px;
+}
+
+.registration-button{
+    border: 2px solid #1F95AE;
+    border-radius: 30px;
+    font-size: 30px;
+    color: #1F95AE;
+    padding: 50px 100px;
+    background-color: #fff;
+}
+
+.registration-button:hover{
+    color: #9dbcc2;
+    border: 2px solid #9dbcc2;
+}

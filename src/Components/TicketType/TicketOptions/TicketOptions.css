@@ -1,0 +1,44 @@
+.ticket-options{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    border-radius: 30px;
+    border: 2px solid #333;
+    gap:30px
+}
+
+.option-name{
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+li{
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+.recommened{
+    background: #3523DA;
+    color: #fff;
+    width: 70%;
+    padding: 5px 10px;
+    border-radius: 30px ;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.price{
+    color: #333;
+}
+
+.price span{
+    color: #a0a0a0;
+}
+
+.conditions{
+    color: #a0a0a0;
+}

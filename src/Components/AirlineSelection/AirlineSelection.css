@@ -1,0 +1,80 @@
+.airlineselection{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px; */
+
+}
+
+.route{
+    border: 2px solid #313638;
+    padding: 30px 100px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+
+}
+
+.route p{
+    font-size: 28px;
+}
+
+.linestrike{
+    width: 100px;
+    height: 3px;
+    background: #313638 ;
+}
+
+.dates{
+    border: 2px solid #313638;
+    padding: 10px 50px;
+    /* width: 1200px; */
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    gap:80px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.date{
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+
+
+.price{
+    font-size: 24px;
+    font-weight: 900;
+    color: #a0a0a0;
+}
+
+.selected{
+    color: #313638;
+}
+
+.fade{
+    color: #c4c4c4;
+}
+
+.current-date{
+    height: 8px;
+    width: 100px;
+    background: #1F95AE;
+    border-radius: 10px;
+}
+
+.other-options{
+    color: #1F95AE;
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px 0px;
+}

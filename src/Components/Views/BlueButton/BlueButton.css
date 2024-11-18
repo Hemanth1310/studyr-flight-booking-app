@@ -1,0 +1,21 @@
+.blue-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.blue-button button{
+    border:none;
+    height:80px;
+    /* width:160px; */
+    padding: 25px;
+    background: #1F95AE;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 24px;
+
+}
+
+.blue-button button:hover{
+    background: #a9c0c4;
+}

@@ -1,0 +1,25 @@
+.dates{
+    border: 2px solid #313638;
+    padding: 10px 50px;
+    /* width: 1200px; */
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    gap:80px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.date{
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+
+
+.price{
+    font-size: 24px;
+    font-weight: 900;
+    color: #a0a0a0;
+}

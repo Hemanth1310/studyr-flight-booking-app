@@ -1,0 +1,53 @@
+.booking-complete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    margin-top: 50px;
+}
+
+.price-listing{
+    border: 2px solid #333;
+    padding: 40px 100px 40px 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:50px
+}
+
+.listing{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    text-align: left;
+
+}
+
+ .total p{
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+.total span{
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+.listing p{
+    width: 300px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.listing span{
+    width: 100px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.line-strike{
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+}
+
+

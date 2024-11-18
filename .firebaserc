@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "studyr-flight-booking-app",
+    "proposal": "studyr-flight-booking-app"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

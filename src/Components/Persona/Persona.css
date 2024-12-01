@@ -1,0 +1,51 @@
+.persona-container {
+    /* font-family: 'Arial', sans-serif; */
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+     background-color: #f9f9f9;
+    gap:5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .persona-heading {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .persona-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .persona-subheading {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .persona-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: #333;
+    /* width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; */
+    
+  }
+  
+  .persona-list li {
+    /* margin-bottom: 5px; */
+    padding: 0px !important;
+  }
+  

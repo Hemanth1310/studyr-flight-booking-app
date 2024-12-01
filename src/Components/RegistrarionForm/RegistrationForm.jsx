@@ -112,7 +112,17 @@ export const RegistrationForm = () => {
                    <BlueButton name="Submit" handleClick={onSubmit}></BlueButton>
             </div>
             <div className='image-container'>
-                <img src={relax}></img>
+                {/* <img src={relax}></img> */}
+                <div className='rg-hint-box'>
+                        <div className="rg-persona-section">
+                        <h2 className="rg-persona-subheading">Hint for Basic Information</h2>
+                        <p><strong>Name:</strong> Emma Hart</p>
+                        <p><strong>DOB:</strong> 30/01/1990</p>
+                        <p><strong>Occupation:</strong> Freelance Designer</p>
+                        <p><strong>Email:</strong> emma@abc.com</p>
+                        <p><strong>Location:</strong> Berlin, Germany</p>
+                    </div>
+                </div>
             </div>
 
         </div>

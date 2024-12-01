@@ -12,6 +12,7 @@ export const BookingCompletion = () => {
 
     const onAnalysis=()=>{
         navigate(`/analysis/${fp}/${cat}`)
+        navigate(`/questionnaire/${fp}/${cat}`)
     }
   return (
     <div className='booking-complete'>

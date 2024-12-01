@@ -1,0 +1,118 @@
+.ques{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+     font-size: 21px;
+    /* margin: 20px; */
+    /* max-width: 1800px; */
+}
+
+
+.ques h1,.ques h2{
+
+}
+
+.ques p,.ques div{
+    margin-bottom: 10px;
+    font-size: 28px;
+
+}
+.question{
+    margin-bottom: 70px;
+
+    text-align: left;
+    padding: 0px 50px;
+
+}
+
+.ques label{
+    font-size: 20px;
+    align-items: center;
+    margin-right: 50px;
+
+}
+
+.ques input[type="radio"] {
+    margin-right: 5px;
+    height: 20px;
+    width:20px;
+    border: 2px solid #2c3e50;
+}
+.radio-buttons{
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.ques-form-actions{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.ques-bordered-button{
+    color: var(--primary-brand-color);
+    font-size:32px;
+    margin: 50px 0px;
+    padding: 20px 10px;
+    border: 2px solid var(--primary-brand-color);
+    border-radius: 30px;
+    cursor: pointer;
+    background: none;
+    width: 300px;
+}
+
+.ques-bordered-button:disabled {
+
+    color: #ccc;
+    border-color: #ccc;
+}
+
+.ques-submit-button {
+    background: var(--primary-brand-color);
+    padding:25px;
+    color:#fff;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 500px;
+    border:none;
+    font-weight:600;
+}
+.ques-invalid {
+    border: 1px solid red;
+    background-color: #ffe6e6;
+}
+
+.ques-submit-button:disabled{
+    background: #ccc;
+    font: #2c2c2c;
+    display: none;
+    cursor: not-allowed;
+}
+
+.ques td, .ques th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* width: 200px; */
+    font-size: 21px;
+    min-width: 200px;
+    text-align: left;
+  }
+  
+  .ques tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .ques tr:hover {background-color: #ddd;}
+  
+  .ques th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }

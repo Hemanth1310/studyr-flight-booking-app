@@ -13,7 +13,7 @@ export const Flexi = (props) => {
     }
   return (
     <div className='ticket-options'>
-        {props.isRecommended?<div className='recommened'>Recommened</div>:null}
+        {props.isRecommended?<div className='recommened'>Recommended</div>:null}
         <div className='option-name'>Flexi</div>
         <ul>
             <li>Luaguage Upto 25 kg plus a Hand bag 7kg</li>

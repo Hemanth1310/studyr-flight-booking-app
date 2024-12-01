@@ -11,7 +11,7 @@ export const AirlineSelection = () => {
 
     const userChoices = userPref
 
-    const [expandOpt,setExpandOpt]= useState(false);
+    const [expandOpt,setExpandOpt]= useState(true);
 
     
 
@@ -19,9 +19,9 @@ export const AirlineSelection = () => {
     <div className="airlineselection">
         <NavBar></NavBar>
         <div className='route'>
-            <p>Bremen</p>
+            <p>Berlin</p>
             <div className='linestrike'></div>
-            <p>Bercelona</p>
+            <p>Dubai</p>
         </div>
        <DateSalection></DateSalection>
         <div className='flight-options'>
@@ -32,9 +32,9 @@ export const AirlineSelection = () => {
                             {expandOpt?  <div style={{display:'flex',flexDirection:'column',gap:'20px'}}>
                                 <AirlineOption airChoice='0' isRecommended={false}></AirlineOption>
                                 <AirlineOption airChoice='1' isRecommended={false}></AirlineOption>
-                                <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>Lesser Options &#9650;</button>
+                                {/* <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>Lesser Options &#9650;</button> */}
                             </div>:<div>
-                            <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>More Options &#9660;</button>    
+                            {/* <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>More Options &#9660;</button>     */}
                             </div>}
                           
                          </div>
@@ -46,9 +46,9 @@ export const AirlineSelection = () => {
                             {expandOpt?  <div style={{display:'flex',flexDirection:'column',gap:'20px'}}>
                                 <AirlineOption airChoice='0' isRecommended={false}></AirlineOption>
                                 <AirlineOption airChoice='2' isRecommended={false}></AirlineOption>
-                                <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>Lesser Options &#9650;</button>
+                                {/* <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>Lesser Options &#9650;</button> */}
                             </div>:<div>
-                            <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>More Options &#9660;</button>    
+                            {/* <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>More Options &#9660;</button>     */}
                             </div>}
                           
                          </div>
@@ -60,9 +60,9 @@ export const AirlineSelection = () => {
                             {expandOpt?  <div style={{display:'flex',flexDirection:'column',gap:'20px'}}>
                                 <AirlineOption airChoice='1' isRecommended={false}></AirlineOption>
                                 <AirlineOption airChoice='2' isRecommended={false}></AirlineOption>
-                                <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>Lesser Options &#9650;</button>
+                                {/* <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>Lesser Options &#9650;</button> */}
                             </div>:<div>
-                            <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>More Options &#9660;</button>    
+                            {/* <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>More Options &#9660;</button>     */}
                             </div>}
                           
                          </div>
@@ -74,9 +74,9 @@ export const AirlineSelection = () => {
                             {expandOpt?  <div style={{display:'flex',flexDirection:'column',gap:'20px'}}>
                                 <AirlineOption airChoice='0' isRecommended={false}></AirlineOption>
                                 <AirlineOption airChoice='1' isRecommended={false}></AirlineOption>
-                                <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>Lesser Options &#9650;</button>
+                                {/* <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>Lesser Options &#9650;</button> */}
                             </div>:<div>
-                            <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>More Options &#9660;</button>    
+                            {/* <button className='other-options' onClick={()=>setExpandOpt(!expandOpt)}>More Options &#9660;</button>     */}
                             </div>}
                           
                          </div>

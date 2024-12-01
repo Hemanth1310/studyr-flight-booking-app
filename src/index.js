@@ -7,17 +7,23 @@ import BookingContextProvider from './Components/BookingContext/BookingContext';
 import AuthContextProvider from './Components/AuthContext/AuthContext';
 import UserPreferncesContextProvider from './Components/UserPreferencesContext/UserPreferencesContext';
 import CookieContextProvider from './Components/CookieConsent/CookieConsent';
+import UIDContextProvider from './Components/Contexts/UIDContext';
+import OccuranceContextProvider, { OccuranceContext } from './Components/Contexts/OccuranceContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <AuthContextProvider>
-      <UserPreferncesContextProvider>
-        <BookingContextProvider>
-            <CookieContextProvider>
-              <App />
-            </CookieContextProvider>
-        </BookingContextProvider>
-      </UserPreferncesContextProvider>
-    </AuthContextProvider>
+  <UIDContextProvider>
+    <OccuranceContextProvider>
+      <AuthContextProvider>
+        <UserPreferncesContextProvider>
+          <BookingContextProvider>
+              <CookieContextProvider>
+                <App />
+              </CookieContextProvider>
+          </BookingContextProvider>
+        </UserPreferncesContextProvider>
+      </AuthContextProvider>
+    </OccuranceContextProvider>
+  </UIDContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

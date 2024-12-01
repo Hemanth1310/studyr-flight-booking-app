@@ -10,9 +10,15 @@ import { CookieContext } from '../CookieConsent/CookieConsent'
 // import { collection, addDoc } from "firebase/firestore"; 
 import { getDatabase, ref, push } from "firebase/database";
 import { app } from '../../firebase'
+import { UIDContext } from '../Contexts/UIDContext'
+import { OccuranceContext } from '../Contexts/OccuranceContext'
 
 const database = getDatabase(app); 
 export const Responses = () => {
+
+    const {uid,handleUID} = useContext(UIDContext)
+    const {occurance,handleOccurance} = useContext(OccuranceContext)
+    const ospf = occurance==='fo'?'fod':'sod'
     
     const {fp,cat}=useParams();
     const {bStatus,updateBookingStatus}=useContext(BookingContext)
@@ -20,6 +26,7 @@ export const Responses = () => {
     const {cConsent,updateCookieConsent} =useContext(CookieContext)
     const navigate = useNavigate()
     const participant_data={
+        'UID':`${uid}`,
         'BookingClass':`${userPref[0]==='0'?'Economic':'Comfort'}`,
         'DurationType':`${userPref[1]==='0'?'No Rush':'In Rush'}`,
         'LugguageType':`${userPref[2]==='0'?'Light Weight':'Heavy Weight'}`,
@@ -31,7 +38,8 @@ export const Responses = () => {
         'TicketCategory':`${cat==='0'?'Standard':
             cat==='30'?'Standard Plus':
             cat==='40'?'Flexi':null}`,
-        'TotalSpendings':`${Number(flight_info[bStatus].price)+Number(cat)}`    
+        'TotalSpendings':`${Number(flight_info[bStatus].price)+Number(cat)}`,
+        'UserFeedBack':`${localStorage.getItem('userFeedback')}`    
     }
 
     const onSumbit=()=>{
@@ -42,7 +50,8 @@ export const Responses = () => {
     updateCookieConsent(false)
         
         // navigate('/')
-         window.location.href = 'https://cdp-ticketing-interface-study.web.app/SecondPart/1'
+         window.location.href = `https://cdp-ticketing-interface-study.web.app/SecondPart/1/${uid}/${ospf}`
+         
     }
 
     // Function to add data
@@ -63,61 +72,8 @@ const addBooking = async () => {
 
     return (
     <div className='responses'>
-       <h1> Responses</h1>
-        <div className='user-pref'>
-            <p>User Prefferences:</p>
-            <div className='pref-list'>
-                <div className='res-listing'>
-                    <p>Booking Class:</p>
-                    {userPref[0]==='0'?<span>Economic</span>:<span>Comfort</span>}
-                </div>
-                <div className='res-listing'>
-                    <p>Duration Type:</p>
-                    {userPref[1]==='0'?<span>No Rush</span>:<span>In Rush</span>}
-                </div> 
-                <div className='res-listing'>
-                    <p>Lugguage Type:</p>
-                    {userPref[2]==='0'?<span>Light Weight</span>:<span>Heavy Weight</span>}
-                </div> 
-                <div className='res-listing'>
-                    <p>Flexibility:</p>
-                    {userPref[3]==='0'?<span>false</span>:<span>true</span>}
-                </div>
-            </div>     
-                
-        </div>
-
-        <div className='res-listing'>
-                <p>Registration Status:</p>
-                {userPref[3]==='0'?<span>Guest</span>:<span>Resgistered User</span>}
-        </div>
-        <div className='res-listing'>
-                <p>Cookie Consent:</p>
-                <span>{cConsent?'approved':'rejected'}</span>
-        </div>
-
-        <div className='res-listing'>
-                <p>Airline:</p>
-                <span>{flight_info[bStatus].airline}</span>
-        </div>
-        <div className='res-listing'>
-                <p>Basic Ticket Price:</p>
-                <span>{flight_info[bStatus].price}</span>
-        </div>
-        <div className='res-listing'>
-                <p>Ticket Category:</p>
-                
-                {cat==='0'?<span>Standard</span>:
-                cat==='30'?<span>Standard Plus</span>:
-                cat==='40'?<span>Flexi</span>:null}
-        </div>
-        <div className='res-listing'>
-                <p>Total Spendings:</p>
-                
-               <span>{Number(flight_info[bStatus].price)+Number(cat)}</span>
-        </div>
-
-        <BlueButton name="Next Participant" handleClick={onSumbit}></BlueButton>
+       <h1> Thank You For the FeedBack</h1>
+        <BlueButton name="Continue To next Part of the Study" handleClick={onSumbit}></BlueButton>
 
     </div>
   )
